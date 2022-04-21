@@ -1,0 +1,42 @@
+﻿@model FinalProject1.Models.BuyerInfo
+
+@{
+    ViewData["Title"] = "Details";
+}
+
+<h1>Details</h1>
+
+<div>
+    <h4>BuyerInfo</h4>
+    <hr />
+    <dl class="row">
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BuyerID)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BuyerID)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BuyerName)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BuyerName)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BuyerAge)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BuyerAge)
+        </dd>
+        <dt class="col-sm-2">
+            @Html.DisplayNameFor(model => model.BuyerAddress)
+        </dt>
+        <dd class="col-sm-10">
+            @Html.DisplayFor(model => model.BuyerAddress)
+        </dd>
+    </dl>
+</div>
+<div>
+    <a asp-action="Edit" asp-route-id="@Model.BuyerID">Edit</a> |
+    <a asp-action="Index">Back to List</a>
+</div>
